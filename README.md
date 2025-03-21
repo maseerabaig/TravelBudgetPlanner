@@ -1,4 +1,4 @@
-# **TravelBudgetTool - Documentation**
+# TravelBudgetPlanner
 
 ---
 
@@ -11,12 +11,12 @@
 
 ### **1. Clone the Project:**  
 ```bash
-git clone https://github.com/Tusharwasake/TravelBudgetTool.git
+git clone https://github.com/maseerabaig/TravelBudgetPlanner.git
 ```
 
 ### **2. Navigate to the Project Directory:**  
 ```bash
-cd TravelBudgetTool/Frontend
+cd TravelBudgetPlanner/Frontend
 ```
 
 ### **3. Install Dependencies:**  
