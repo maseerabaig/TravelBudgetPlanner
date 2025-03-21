@@ -1,0 +1,5 @@
+ List of thing i uses
+ ----------------------------
+css = tailwind
+icon = lucide-react
+navigation = react router dom
