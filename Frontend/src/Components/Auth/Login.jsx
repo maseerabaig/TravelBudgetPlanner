@@ -22,7 +22,7 @@ function Login() {
     setWait("wait");
     try {
       const response = await axios.post(
-        "https://travelbudgettool.onrender.com/user/signin",
+        "https://travelbudgetplanner-sywj.onrender.com/user/signin",
         formData
       );
       // console.log("Login Successful:", response.data);
