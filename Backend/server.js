@@ -7,7 +7,19 @@ import cors from "cors";
 const app = express(); // 
 
 app.use(express.json());
-app.use(cors());
+//app.use(cors());
+app.use(cors({
+  origin: "*",  // Allow all origins (for testing)
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"], // Allowed HTTP methods
+  allowedHeaders: ["Content-Type", "Authorization"], // Allowed headers
+  credentials: true
+}));
+
+// Handle Preflight Requests (Important for POST/PUT Requests)
+app.options("*", (req, res) => {
+  res.sendStatus(200);
+});
+
 
 app.use("/user", userRouter);
 
