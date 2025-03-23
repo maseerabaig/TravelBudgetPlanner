@@ -13,7 +13,7 @@ function DataContex({ children }) {
     try {
       // Get budget ID
       const responseGetBudget = await fetch(
-        "https://travelbudgettool.onrender.com/user/budgets",
+        "https://travelbudgetplanner-sywj.onrender.com/user/budgets",
         {
           method: "GET",
           headers: {
@@ -55,7 +55,7 @@ function DataContex({ children }) {
       console.log("Active Budget ID:", globalBudgetId);
 
       const response = await fetch(
-        `https://travelbudgettool.onrender.com/user/budgets/${globalBudgetId}`,
+        `https://travelbudgetplanner-sywj.onrender.com/user/budgets/${globalBudgetId}`,
         {
           method: "GET",
           headers: {
@@ -80,7 +80,7 @@ function DataContex({ children }) {
   const FetchOverData = async () => {
     try {
       const response = await fetch(
-        "https://travelbudgettool.onrender.com/user/budgets/showdata/",
+        "https://travelbudgetplanner-sywj.onrender.com/user/budgets/showdata/",
         {
           method: "GET",
           headers: {
