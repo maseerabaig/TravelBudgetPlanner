@@ -11,7 +11,8 @@ app.use(cors());
 
 app.use("/user", userRouter);
 
-app.listen(process.env.SERVER_PORT, () => {
+const PORT = process.env.PORT || 3001;
+app.listen(PORT, () => {
   try {
     console.log("server has started http://localhost:3001/");
     db();
