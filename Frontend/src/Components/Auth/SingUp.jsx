@@ -27,7 +27,7 @@ function SingUp() {
 
     try {
       const response = await axios.post(
-        "https://travelbudgettool.onrender.com/user/signup",
+        "https://travelbudgetplanner-sywj.onrender.com/user/signup",
         formData
       );
       setFormData({
